@@ -5,14 +5,12 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(
-    entities = [WaybillEntity::class],
-    exportSchema = false,
-    version = 1
-)
+//@Database(
+//    entities = [],
+//    exportSchema = false,
+//    version = 1
+//)
 abstract class CekOngkirDatabase: RoomDatabase() {
-
-    abstract fun waybillDao(): WaybillDao
 
     companion object {
         @Volatile private var instance: CekOngkirDatabase? = null
